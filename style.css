@@ -1,0 +1,160 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    display: initial;
+}
+a:visited{
+    color: black;
+}
+
+/* font-family: 'Bruno Ace', cursive;
+font-family: 'Special Elite', cursive; */
+
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imagenes/background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    backdrop-filter: blur(4px);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: 2px solid #b53c36;
+    transition: box-shadow 0.3s ease;
+    color: rgb(246, 237, 237);
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+.header-title {
+    font-family: 'Bruno Ace', cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'texto texto'
+    'choise1 choise2';
+    margin: 20px;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.grid-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.item1 { 
+    grid-area: texto; 
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: rgba(255, 136, 0, 0.3);
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.item2{
+    grid-area: choise1;
+    background-color: rgba(246, 255, 0, 0.3);
+    border-radius: 10px;
+    text-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    font-family: 'Special Elite', cursive;
+    margin-top: 30px;
+    padding: 50px 0px 50px 10px;
+}
+.item3{
+    grid-area: choise2;
+    background-color: rgba(255, 0, 0, 0.3);
+    border-radius: 10px;
+    text-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+    font-family: 'Special Elite', cursive;
+    margin-top: 30px;
+    padding: 50px 0px 50px 10px;
+}
+
+.item2:hover, .item3:hover{
+    color: white;
+    transform: scale(1.02);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* codigo para las templates(desiciones) */
+
+.header1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    border-bottom: 2px solid #b53c36;
+    transition: box-shadow 0.3s ease;
+    color: rgb(246, 237, 237);
+    background: rgba(255, 255, 255, 0.2); 
+}
+
+.button-choise{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(246, 237, 237,0.5);
+    border: 1px solid #000000;
+    color: #000000;
+    cursor: pointer;
+    margin-right: 60px;
+}
+.button-choise:hover{
+    transform: scale(1.05);
+}
+
+.main-message{
+    display: flex;
+    margin: 40px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+}
+
+.main-message p{
+    font-size: 20px;
+    font-family: 'Special Elite', cursive;
+}
